@@ -1,0 +1,56 @@
+/* Estilos del carrusel */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 300px; /* Ajusta la altura según tus imágenes */
+    margin-bottom: 20px; /* Espacio entre el carrusel y el contenido */
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+}
+
+.prev-button:hover, .next-button:hover {
+    opacity: 1;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
