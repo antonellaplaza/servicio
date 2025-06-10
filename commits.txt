@@ -1,0 +1,6 @@
+commit uno
+respaldo del servidor local al github
+
+commit dos pagina acerca de nosotros
+se cambio el index.html para que solo tuviera un carrusel 3 fotos y una seccion de galeria
+se creo la pagina de acerca nosotros donde se movio mision vision y valores

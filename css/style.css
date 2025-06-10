@@ -176,3 +176,72 @@ footer {
     font-size: 1.2rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+/* Sección de Galería */
+#galeria-fotos {
+    text-align: center; /* Centra el título de la galería */
+}
+
+/* Contenedor principal de la galería */
+.gallery-container {
+    display: flex; /* Habilita Flexbox para la distribución en hilera */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente hilera si no caben */
+    justify-content: center; /* Centra las fotos horizontalmente si hay espacio extra */
+    gap: 20px; /* Espacio entre los items de la galería (fotos) */
+    padding: 20px 0; /* Espacio interno superior e inferior */
+}
+
+/* Cada item de la galería (donde va cada foto) */
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* Para 3 columnas: 33.333% menos el espacio del gap */
+    max-width: calc(33.333% - 20px); /* Asegura que no crezcan más allá de un tercio */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que la imagen no se salga del borde redondeado */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /* Efecto suave al pasar el ratón */
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* Efecto de "levantar" al pasar el ratón */
+}
+
+/* Estilo para las imágenes dentro de cada item */
+.gallery-item img {
+    width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
+    height: 200px; /* Altura fija para que todas las imágenes tengan el mismo tamaño */
+    object-fit: cover; /* Recorta la imagen para que cubra el espacio sin distorsionarse */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    border-bottom: 1px solid #eee; /* Separador visual entre imagen y texto */
+}
+
+/* Estilo para la descripción debajo de la foto */
+.gallery-item p {
+    padding: 15px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* --- Media Queries para responsividad --- */
+
+/* Para pantallas medianas (ej. tablets, 768px de ancho o menos) */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px); /* 2 columnas */
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Para pantallas pequeñas (ej. móviles, 480px de ancho o menos) */
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%; /* 1 columna */
+        max-width: 100%;
+        margin: 10px 0; /* Espacio vertical entre los items */
+    }
+    .gallery-container {
+        gap: 0; /* No necesitamos gap horizontal si es una columna */
+    }
+}
