@@ -6,4 +6,5 @@ se cambio el index.html para que solo tuviera un carrusel 3 fotos y una seccion 
 se creo la pagina de acerca nosotros donde se movio mision vision y valores
 
 commit tres
-correciones a unas cosas 
+correciones a unas cosas
+

@@ -3,7 +3,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    height: 300px; /* Ajusta la altura según tus imágenes */
+    height: 400px; /* Ajusta la altura según tus imágenes */
     margin-bottom: 20px; /* Espacio entre el carrusel y el contenido */
 }
 

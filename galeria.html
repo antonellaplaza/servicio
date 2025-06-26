@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/carrusel.css">
+</head>
+<body>
+        <header>
+        <div class="logo-container">
+            <img src="img/logo.jfif" alt="Logo Colegio" class="logo" />
+            <div>
+                <h1>Colegio Domingo Savio:Salón Neurodivergente</h1>
+                <p>Espacio inclusivo que celebra las diferencias y potencia las capacidades</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="rojo">Inicio</a>
+        <a href="narbed.html" class="amarillo">NARBED</a>
+        <a href="galeria.html" class="azul">Galería</a>
+        <a href="preguntasfrecuentes.html" class="verde">Preguntas Frecuentas</a>
+        
+    </nav>
+    <section id="galeria-fotos" class="container">
+    <h2>Nuestra Galería</h2>
+    <p>Momentos especiales en el Salón Neurodivergente NARBED: actividades, juegos, eventos y más.</p>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="img/prueba1.jfif" alt="Descripción de la foto 1" onclick="ampliarImagen(this)">
+            <p>Descripción breve de la foto 1.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/prueba2.jfif" alt="Descripción de la foto 2" onclick="ampliarImagen(this)">
+            <p>Descripción breve de la foto 2.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/prueba3.jfif" alt="Descripción de la foto 3" onclick="ampliarImagen(this)">
+            <p>Descripción breve de la foto 3.</p>
+        </div>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="img/prueba1.jfif" alt="Descripción de la foto 1" onclick="ampliarImagen(this)">
+            <p>Descripción breve de la foto 1.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/prueba2.jfif" alt="Descripción de la foto 2" onclick="ampliarImagen(this)">
+            <p>Descripción breve de la foto 2.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/prueba3.jfif" alt="Descripción de la foto 3" onclick="ampliarImagen(this)">
+            <p>Descripción breve de la foto 3.</p>
+        </div>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="img/prueba1.jfif" alt="Descripción de la foto 1" onclick="ampliarImagen(this)">
+            <p>Descripción breve de la foto 1.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/prueba2.jfif" alt="Descripción de la foto 2" onclick="ampliarImagen(this)">
+            <p>Descripción breve de la foto 2.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/prueba3.jfif" alt="Descripción de la foto 3" onclick="ampliarImagen(this)">
+            <p>Descripción breve de la foto 3.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Visor para ampliar imagen -->
+<div id="visor" class="visor" onclick="cerrarImagen()">
+    <img id="imagen-ampliada" src="" alt="Imagen Ampliada">
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
