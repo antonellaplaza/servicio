@@ -1,12 +1,15 @@
-/* Estilos del carrusel */
+/* --- Carrusel General --- */
 .carousel-container {
     width: 100%;
-    overflow: hidden;
     position: relative;
-    height: 400px; /* Ajusta la altura según tus imágenes */
-    margin-bottom: 20px; /* Espacio entre el carrusel y el contenido */
+    overflow: hidden;
+    aspect-ratio: 16 / 9; /* Mejora para hacerlo responsivo */
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* --- Slides --- */
 .carousel-slide {
     position: absolute;
     top: 0;
@@ -19,38 +22,59 @@
 
 .carousel-slide.active {
     opacity: 1;
+    z-index: 1;
 }
 
+/* --- Imágenes dentro del carrusel --- */
 .carousel-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
+/* --- Botones de navegación --- */
 .prev-button, .next-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: none;
+    background-color: rgba(0, 0, 0, 0.4);
     border: none;
-    font-size: 2em;
+    font-size: 2rem;
     color: #fff;
     cursor: pointer;
-    padding: 10px;
+    padding: 12px 16px;
     z-index: 10;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    user-select: none;
 }
 
-.prev-button:hover, .next-button:hover {
+.prev-button:hover,
+.next-button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
+    transform: translateY(-50%) scale(1.1);
 }
 
 .prev-button {
-    left: 10px;
+    left: 16px;
 }
 
 .next-button {
-    right: 10px;
+    right: 16px;
+}
+
+/* --- Responsividad para pantallas pequeñas --- */
+@media (max-width: 600px) {
+    .carousel-container {
+        aspect-ratio: 4 / 3;
+    }
+
+    .prev-button,
+    .next-button {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
 }

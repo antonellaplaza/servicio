@@ -1,249 +1,275 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background:rgb(255, 255, 255);
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+}
 
-  section {
-    padding: 3rem 0;
-    border-bottom: 1px solid #ddd;
-    }
-   
-  header {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav {
-    background: #000000;
-    text-align: center;
-    box-shadow: 1px 5px 5px rgb(151, 150, 150);
-  }
-  
-  nav a {
-    color: rgb(255, 255, 255);
-    padding: 14px 20px;
-    display: inline-block;
-    text-decoration: none;
-  }
-  
-  nav .rojo:hover {
-    background-color: #d30a1a;
-  }
+section {
+  padding: 3rem 0;
+  border-bottom: 1px solid #ddd;
+}
 
-  nav .amarillo:hover {
-    background-color: #bec052;
-  }
+header {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
 
-  nav .verde:hover {
-    background-color: #2e8a2e;
-  }
+nav {
+  background: #000000;
+  text-align: center;
+  box-shadow: 1px 5px 5px rgb(151, 150, 150);
+}
 
-  nav .azul:hover {
-    background-color: #0a50d3;
-  }
-  
-  .container {
-    max-width: 1000px;
-    margin: auto;
-    background: rgb(255, 255, 255);
-    padding: 40px;
-  }
-  
-  h2 {
-    color: #000000;
-  }
-  
-  footer {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
-  }
-  
-  #btn-arriba {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #004080;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    display: none;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    justify-content: left;
-    text-align: left;
-  }
-  
-  .logo {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-  }
+nav a {
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
 
-/* --- Tarjetas--- */
+nav .rojo:hover {
+  background-color: #d30a1a;
+}
+
+nav .amarillo:hover {
+  background-color: #bec052;
+}
+
+nav .verde:hover {
+  background-color: #2e8a2e;
+}
+
+nav .azul:hover {
+  background-color: #0a50d3;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  padding: 40px;
+}
+
+h2 {
+  color: #000000;
+}
+
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+#btn-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #004080;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: left;
+  text-align: left;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
 /* --- Tarjetas Estéticas --- */
 .card-container {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .card {
-    background: linear-gradient(135deg, #c9ebf0, #ffffff);
-    padding: 1.5rem 2rem;
-    border-radius: 1.5rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    flex: 1 1 300px;
-    max-width: 350px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
+  background: linear-gradient(135deg, #c9ebf0, #ffffff);
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  flex: 1 1 300px;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
 .card h3 {
-    margin-top: 0;
-    color: #000000;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+  margin-top: 0;
+  color: #000000;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .card p {
-    color: #000000;
-    font-size: 1rem;
-    line-height: 1.5;
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* --- Sección de Galería --- */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-
-/* Sección de Galería */
 #galeria-fotos {
-    text-align: center; /* Centra el título de la galería */
+  text-align: center;
 }
 
-/* Contenedor principal de la galería */
 .gallery-container {
-    display: flex; /* Habilita Flexbox para la distribución en hilera */
-    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente hilera si no caben */
-    justify-content: center; /* Centra las fotos horizontalmente si hay espacio extra */
-    gap: 20px; /* Espacio entre los items de la galería (fotos) */
-    padding: 20px 0; /* Espacio interno superior e inferior */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
 }
 
-/* Cada item de la galería (donde va cada foto) */
 .gallery-item {
-    flex: 1 1 calc(33.333% - 20px); /* Para 3 columnas: 33.333% menos el espacio del gap */
-    max-width: calc(33.333% - 20px); /* Asegura que no crezcan más allá de un tercio */
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden; /* Asegura que la imagen no se salga del borde redondeado */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease; /* Efecto suave al pasar el ratón */
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
-    transform: translateY(-5px); /* Efecto de "levantar" al pasar el ratón */
+  transform: translateY(-5px);
 }
 
-/* Estilo para las imágenes dentro de cada item */
 .gallery-item img {
-    width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
-    height: 200px; /* Altura fija para que todas las imágenes tengan el mismo tamaño */
-    object-fit: cover; /* Recorta la imagen para que cubra el espacio sin distorsionarse */
-    display: block; /* Elimina el espacio extra debajo de la imagen */
-    border-bottom: 1px solid #eee; /* Separador visual entre imagen y texto */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
 }
 
-/* Estilo para la descripción debajo de la foto */
 .gallery-item p {
-    padding: 15px;
-    font-size: 0.9em;
-    color: #555;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #555;
 }
 
-/* --- Media Queries para responsividad --- */
-
-/* Para pantallas medianas (ej. tablets, 768px de ancho o menos) */
-@media (max-width: 768px) {
-    .gallery-item {
-        flex: 1 1 calc(50% - 20px); /* 2 columnas */
-        max-width: calc(50% - 20px);
-    }
-}
-
-/* Para pantallas pequeñas (ej. móviles, 480px de ancho o menos) */
-@media (max-width: 480px) {
-    .gallery-item {
-        flex: 1 1 100%; /* 1 columna */
-        max-width: 100%;
-        margin: 10px 0; /* Espacio vertical entre los items */
-    }
-    .gallery-container {
-        gap: 0; /* No necesitamos gap horizontal si es una columna */
-    }
-}
-
+/* --- Visor para imágenes --- */
 .visor {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.95);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 .visor img {
-    max-width: 95vw;
-    max-height: 95vh;
-    object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
-    transition: transform 0.3s ease-in-out;
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+  transition: transform 0.3s ease-in-out;
 }
 
 .visor img:hover {
-    transform: scale(1.02);
-    cursor: zoom-out;
+  transform: scale(1.02);
+  cursor: zoom-out;
+}
+
+/* --- Media Queries para responsividad --- */
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    display: block;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .card {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .gallery-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .gallery-item img {
+    height: auto;
+  }
+
+  #btn-arriba {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
 }
